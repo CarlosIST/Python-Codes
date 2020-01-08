@@ -1,0 +1,5 @@
+### In this case, we have two different names under the EXFORGE category
+### This code sets a boolean if the string in column 'PRODUCTO' contains the string 'EXFORGE'
+
+### CODE STARTS HERE ###
+productos_CUP_Exforge = tabla_productos_CUP['PRODUCTO'].str.contains('EXFORGE', re.IGNORECASE)
