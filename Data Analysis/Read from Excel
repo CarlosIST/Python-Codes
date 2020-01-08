@@ -1,0 +1,5 @@
+### Funtion that reads Excel file from specified route
+### The rest of the variables have strings
+
+### CODE STARTS HERE ###
+tabla_inicial_CUP = pd.read_excel(ruta_G_CUP + "/" + file_Close_Up_Prefix + file_Close_Up + file_Close_Up_Suffix + ".xlsx")
