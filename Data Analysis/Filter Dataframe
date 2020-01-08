@@ -1,0 +1,6 @@
+### We take the column 'MERCADO' of df tabla_inicial_CUP and create df named
+### tabla_productos_CUP which is a filter considering the values in the
+### producto_prueba array
+
+### CODE STARTS HERE ###
+tabla_productos_CUP = tabla_inicial_CUP[tabla_inicial_CUP['MERCADO'] == producto_prueba]
