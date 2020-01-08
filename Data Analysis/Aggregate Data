@@ -1,0 +1,6 @@
+### Inside groupby() we introduce a df column (in this case, it is already filtered)
+### Inside .agg() we declare column names (sum_MAT_18) and set them to ('column_name', 'aggregating_function')
+
+### CODE STARTS HERE ###
+group_CUP_Exforge = tabla_productos_CUP.groupby(productos_CUP_Exforge).agg(sum_MAT_18=('MAT 18', 'sum'),
+                                                                   sum_MAT_19=('MAT 19', 'sum'))
