@@ -1,0 +1,15 @@
+# By Carlos Santillán
+# Python 3
+
+### Allows us to upload a file
+from google.colab import files
+uploaded = files.upload()
+
+### We pass the read file into a dataframe
+import pandas as pd
+import io
+
+df = pd.read_csv(io.StringIO(uploaded['AAPL10Y.csv'].decode('utf-8')), sep = ',')
+
+### If it is inside the directory:
+df = pd.read_csv('gs://cloud-training/ai4f/AAPL10Y.csv')
