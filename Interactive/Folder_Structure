@@ -1,0 +1,18 @@
+Folder structure for the dashboard.py files:
+
+- They contain a style.css file, as well as an .ico one asides from the .py
+
+Example structure:
+
+Main_Folder >
+  > .idea (folder)
+  > assets (folder)
+    > style.css
+    > favicon.ico
+  > venv (folder)
+  > dashboard.py
+  > data.csv
+  > Procfile (not sure how it is used)
+  > requirements.txt 
+  > runtime.txt
+  
