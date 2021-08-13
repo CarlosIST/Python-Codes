@@ -1,0 +1,10 @@
+c:\> mkdir avocado_analytics && cd avocado_analytics
+c:\> c:\path\to\python\launcher\python -m venv venv
+c:\> venv\Scripts\activate.bat
+
+'''
+The first command creates a directory for your project and moves your current location there.
+The second command creates a virtual environment in that location. 
+The last command activates the virtual environment.
+Make sure to replace the path in the second command with the path of your Python 3 launcher.
+'''
