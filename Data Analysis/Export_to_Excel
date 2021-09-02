@@ -1,0 +1,11 @@
+!pip install xlsxwriter
+
+!pip install xlwt
+
+#create a Pandas Excel writer using XlsxWriter as the engine
+writer = pd.ExcelWriter('Path/file_name.xlsx', engine='xlsxwriter')
+
+df1.to_excel(writer, sheet_name='Sheet_1')
+df2.to_excel(writer, sheet_name='Sheet_2')
+
+writer.save()
