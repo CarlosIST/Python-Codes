@@ -1,0 +1,22 @@
+## Construimos pivot
+pivot_RTE = pd.pivot_table(dfMergeSeleccionRTE,
+                           index = ['CONCAT_FUERZA_CUSTOMER_ID'],
+                           columns = ['STATUS', 'OPEN'], values = ['FUERZA'], aggfunc = 'count')
+
+## Aplanamos pivot
+pivot_RTE = pd.DataFrame(pivot_RTE.to_records())
+
+## Editamos nombres de las columnas resultantes
+pivot_RTE.columns = [hdr.replace("('FUERZA', 'ERR', ''", "ERROR_NOT_OPEN").replace(")", "") \
+                     for hdr in pivot_RTE.columns]
+
+pivot_RTE.columns = [hdr.replace("('FUERZA', 'ERR', '1'", "ERROR_OPEN").replace(")", "") \
+                     for hdr in pivot_RTE.columns]
+
+pivot_RTE.columns = [hdr.replace("('FUERZA', 'SENT', ''", "SENT_NOT_OPEN").replace(")", "") \
+                     for hdr in pivot_RTE.columns]
+
+pivot_RTE.columns = [hdr.replace("('FUERZA', 'SENT', '1'", "SENT_OPEN").replace(")", "") \
+                     for hdr in pivot_RTE.columns]
+    
+pivot_RTE.fillna(0, inplace = True)     ### Sustituimos registros Nan por 0
