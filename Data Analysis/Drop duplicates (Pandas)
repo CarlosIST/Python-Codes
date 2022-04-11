@@ -1,0 +1,1 @@
+dfSelPrimary.drop_duplicates(subset = "CUSTOMER_ID", keep = "last", inplace = True)
