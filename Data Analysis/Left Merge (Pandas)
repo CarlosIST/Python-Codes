@@ -1,0 +1,1 @@
+dfEconsent = dfEconsent.merge(dataSelFlag, on = "CUSTOMER_ID", how = 'left')
