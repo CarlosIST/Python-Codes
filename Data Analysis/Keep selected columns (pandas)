@@ -1,0 +1,18 @@
+seleccionLista = ['RUTA',
+                  'CUSTOMER_ID',
+                  'FRECUENCIA',
+                  'FRECUENCIA_KADRIGE',
+                  'BRICK',
+                  'CP',
+                  'LATITUDE',
+                  'LONGITUDE',
+                  'BIRTH_DATE',
+                  'MEDICOSEXO',
+                  'CATEGORIA',
+                  'KOL',
+                  'ESPECIALIDAD',
+                  'CEDULA', 
+                  'FUERZA']
+
+### SELECCION filtrada
+dfSeleccionFilter = dfSeleccion[seleccionLista]
