@@ -1,0 +1,1 @@
+dfMergeSeleccionRTE.rename(columns = {'FUERZA_x':'FUERZA'}, inplace = True)
