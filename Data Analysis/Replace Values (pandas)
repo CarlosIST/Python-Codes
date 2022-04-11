@@ -1,0 +1,2 @@
+dfSeleccionFilter['BIRTH_DATE'] = dfSeleccionFilter['BIRTH_DATE'].replace(['N/A'], '01-01-2021')
+dfSeleccionFilter['BIRTH_DATE'] = dfSeleccionFilter['BIRTH_DATE'].replace([''], '01-01-2021')
