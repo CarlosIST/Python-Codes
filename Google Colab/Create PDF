@@ -1,0 +1,6 @@
+## Following code should be pasted at the last cell of the notebook
+## NOTICE: Access to Google Drive is needed and prompted
+
+!wget -nc https://raw.githubusercontent.com/brpy/colab-pdf/master/colab_pdf.py
+from colab_pdf import colab_pdf
+colab_pdf('DS2_Bayesian_AB_Testing.ipynb')
